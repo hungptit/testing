@@ -16,8 +16,8 @@ namespace {
 }
 
 int main() {
+    using namespace zguide;
     srandom((unsigned)time(NULL));
-
     zmq::context_t context(1);
     zmq::socket_t server(context, ZMQ_REP);
     server.bind("tcp://*:5555");

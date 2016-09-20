@@ -45,6 +45,7 @@ using CUSTOMIZED_MSG = std::tuple<std::string, std::string>;
 
 
 int main() {
+    using namespace zguide;
     zmq::context_t context(1);
     auto client = s_client_socket(context);
     int sequence = 0;
